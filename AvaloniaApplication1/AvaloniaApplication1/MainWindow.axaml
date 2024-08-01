@@ -2,15 +2,34 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:local="clr-namespace:AvaloniaApplication1"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="500"
         x:Class="AvaloniaApplication1.MainWindow"
-        Title="AvaloniaApplication1">
-    <StackPanel Width="200">
-        <TextBlock Margin="0 5" FontSize="18" FontWeight="Bold">Heading</TextBlock>
-        <Rectangle Fill="Red" Height="50"/>
-        <Rectangle Fill="Blue" Height="50"/>
-        <Rectangle Fill="Green" Height="100"/>
-        <Rectangle Fill="Orange" Height="50"/>
-
+        Title="AvaloniaApplication1"
+        Width="400" Height="500"
+        x:DataType="local:MainViewModel">
+    
+    <!-- <StackPanel> -->
+    <!--      -->
+    <!--     <TextBlock>Test</TextBlock> -->
+    <!--     <TextBlock Text="{Binding TestProperty}"></TextBlock> -->
+    <!-- </StackPanel> -->
+    
+    
+    <StackPanel>
+        <ListBox Items="{Binding Mangas}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="{Binding CoverImageUrl}" Width="100" Height="150"/>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Title}" FontSize="20" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Author}"/>
+                            <TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </StackPanel>
 </Window>
