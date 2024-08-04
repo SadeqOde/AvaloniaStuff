@@ -9,15 +9,13 @@
         Width="400" Height="500"
         x:DataType="local:MainViewModel">
     
-    <!-- <StackPanel> -->
-    <!--      -->
-    <!--     <TextBlock>Test</TextBlock> -->
-    <!--     <TextBlock Text="{Binding TestProperty}"></TextBlock> -->
-    <!-- </StackPanel> -->
-    
+    <Window.DataContext>
+        <local:MainViewModel />
+    </Window.DataContext>
     
     <StackPanel>
-        <ListBox Items="{Binding Mangas}">
+        <TextBlock Text="{Binding TestProperty}" FontSize="20" FontWeight="Bold" Margin="10"/>
+        <ListBox ItemsSource="{Binding Mangas}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Vertical">
@@ -32,4 +30,5 @@
             </ListBox.ItemTemplate>
         </ListBox>
     </StackPanel>
+ 
 </Window>

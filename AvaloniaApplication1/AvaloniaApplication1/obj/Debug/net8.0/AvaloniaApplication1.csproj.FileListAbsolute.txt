@@ -70,6 +70,3 @@ C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\bin
 C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\Avalonia.FDB175D9.Up2Date
 C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\AvaloniaApplication1.genruntimeconfig.cache
 C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\ref\AvaloniaApplication1.dll
-C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\AvaloniaApplication1.dll
-C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\refint\AvaloniaApplication1.dll
-C:\Users\HP\Desktop\avalo\avalonia\AvaloniaApplication1\AvaloniaApplication1\obj\Debug\net8.0\AvaloniaApplication1.pdb
